@@ -6,10 +6,11 @@ MAINTAINER Newnius <newnius.cn@gmail.com>
 USER root
 
 # install required packages
-RUN apk add openssh openssl openjdk8-jre rsync bash procps
 RUN apk update
 RUN apk upgrade
 RUN apk add bash
+RUN apk add openssh openssl openjdk8-jre rsync bash procps
+
 
 # set JAVA_HOME
 ENV JAVA_HOME /usr/lib/jvm/java-1.8-openjdk
