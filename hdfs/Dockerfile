@@ -9,7 +9,12 @@ USER root
 RUN apk update
 RUN apk upgrade
 RUN apk add bash
-RUN apk add openssh openssl openjdk8-jre rsync bash procps
+RUN apk add openssh
+RUN apk add openssl
+RUN apk add openjdk8-jre 
+RUN apk add rsync
+RUN apk add  bash 
+RUN apk add procps
 
 
 # set JAVA_HOME
